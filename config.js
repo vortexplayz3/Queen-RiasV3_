@@ -3,19 +3,19 @@ require("dotenv").config();
 
 module.exports = {
     prefix: process.env.PREFIX || ".",
-    ownerName: process.env.OWNER_NAME || "Toxxic-Boy",
-    ownerNumber: process.env.OWNER_NUMBER || "2348165846414",
-    mode: process.env.MODE || "public",
+    ownerName: process.env.OWNER_NAME || "Vortex",
+    ownerNumber: process.env.OWNER_NUMBER || "2347055555022",
+    mode: process.env.MODE || "private",
     region: process.env.REGION || "Nigeria",
-    botName: process.env.BOT_NAME || "Rias Gremory V3",
+    botName: process.env.BOT_NAME || "vortex",
     exifPack: process.env.EXIF_PACK || "RIAS V3 LOVES",
     exifAuthor: process.env.EXIF_AUTHOR || "Toxxic",
     timeZone: process.env.TIME_ZONE || "Africa/Lagos",
     presenceStatus: process.env.PRESENCE_STATUS || "unavailable",
-    autoRead: process.env.AUTO_READ === "true",
-    autoViewStatus: process.env.AUTO_VIEW_STATUS === "true",
-    autoReact: process.env.AUTO_REACT === "true",
-    sessionId: process.env.SESSION_ID || "",
+    autoRead: process.env.AUTO_READ === "false",
+    autoViewStatus: process.env.AUTO_VIEW_STATUS === "false",
+    autoReact: process.env.AUTO_REACT === "false",
+    sessionId: process.env.SESSION_ID || "eyJub2lzZUtleSI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiMkhDNmFMYmt4di9yU1NvWjljUFVVYng2bFJSQStEMTZvUzBkTWlLdENWbz0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiMXE1VzBmL3AyOHBhVkNIdnoxQk1pZ09Dc0lERlY3b2RxK1Vsc2tEZ2tHZz0ifX0sInBhaXJpbmdFcGhlbWVyYWxLZXlQYWlyIjp7InByaXZhdGUiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJVTXZYNlVENGJ3eGZHZ3BOcVZBK1JjaVhLU0RCYTNZRU5VRCtja2FtUm5rPSJ9LCJwdWJsaWMiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJJOHNuSXoxaFlrVEhTT29uUWFUTDZTTHhtdERmT0V4b3hGZjdpd1dYTVhjPSJ9fSwic2lnbmVkSWRlbnRpdHlLZXkiOnsicHJpdmF0ZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IlVQWlF4bzVZM2FpTVpJT1BqY25mS3piLzlYZFJYaHlEN2xXTVY1WklMR1k9In0sInB1YmxpYyI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6ImxWRGpPdnVHa2w3V0xXN2hxY2JOTkYyV1FEUHRrd2szQyswWEVkbXJUd009In19LCJzaWduZWRQcmVLZXkiOnsia2V5UGFpciI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiOElFNVlvTUZLRmkyOWNiSjJnQk9zREwza1pvUzEyYktIRWZZUExqcEgxOD0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiM2ZodkFlQU9IdXVpYXdBWk40b0dHNlF2ZXdzdkVFbjdIZ0JiWWdza0tRcz0ifX0sInNpZ25hdHVyZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IjZSWTljUloxeWhVMFg1d3RWRVVZN3gxd1M0MGozRTlvS0RvL3FLdUNhVXhsM3pMRFBxTDBER1AwTjVTZ2ZTNGtHc0lJemI0YlNFbGZRMVZJSm16c2pnPT0ifSwia2V5SWQiOjF9LCJyZWdpc3RyYXRpb25JZCI6MjU0LCJhZHZTZWNyZXRLZXkiOiJ6V0dtR1RQT2FuMTlxdW54LzZRSHdtTXRoak9RWVQzRXp1ZDhUblZlU0ZBPSIsInByb2Nlc3NlZEhpc3RvcnlNZXNzYWdlcyI6W3sia2V5Ijp7InJlbW90ZUppZCI6IjIzNDcwNTU1NTUwMjJAcy53aGF0c2FwcC5uZXQiLCJmcm9tTWUiOnRydWUsImlkIjoiMzNEN0FGMjZGODkyMjU3MTU3NkMwMjAxRTlDQzYxNUQifSwibWVzc2FnZVRpbWVzdGFtcCI6MTczODk1MzE4Mn0seyJrZXkiOnsicmVtb3RlSmlkIjoiMjM0NzA1NTU1NTAyMkBzLndoYXRzYXBwLm5ldCIsImZyb21NZSI6dHJ1ZSwiaWQiOiJGMTE3RDdDMUY4OEYxNDlFMUNEMTQ4QTY3ODJFMDE0NiJ9LCJtZXNzYWdlVGltZXN0YW1wIjoxNzM4OTUzMTgzfV0sIm5leHRQcmVLZXlJZCI6MzEsImZpcnN0VW51cGxvYWRlZFByZUtleUlkIjozMSwiYWNjb3VudFN5bmNDb3VudGVyIjoxLCJhY2NvdW50U2V0dGluZ3MiOnsidW5hcmNoaXZlQ2hhdHMiOmZhbHNlfSwicmVnaXN0ZXJlZCI6dHJ1ZSwicGFpcmluZ0NvZGUiOiIxQVg1RlA3RiIsIm1lIjp7ImlkIjoiMjM0NzA1NTU1NTAyMjo0QHMud2hhdHNhcHAubmV0IiwibmFtZSI6IlZvcnRleCIsImxpZCI6Ijc3NzM1MjE3MTA2OTgyOjRAbGlkIn0sImFjY291bnQiOnsiZGV0YWlscyI6IkNMbWQ0SVFCRU0yam1iMEdHQUVnQUNnQSIsImFjY291bnRTaWduYXR1cmVLZXkiOiIyekZsczZvUmxGUTJpV05UdEp0Q3FiWU8wdmtEY3lwM1JFNGgwZ2ZydURjPSIsImFjY291bnRTaWduYXR1cmUiOiJPQnJEQjNaY2tKL2ZpL1BDUUF5a3ptME9CVWthcC9LQzBFSnlpQ2N0Y1FpaVN2NVdyMTVITmFPcHI1ZmV4OFZYYkxZRTRtZXkxM3Vyb0lMYVYwSWpEQT09IiwiZGV2aWNlU2lnbmF0dXJlIjoiYXozVVZDbXBHRVJUM25IM3RtNlg3RUtBaWhRd2tNcGtMTEoraHBPN2EwS0UyNlRnZXFpUkZpMUJQNXFBbUFKZG83S3VKbWZTSjBDYjY2SnB6WnpTaXc9PSJ9LCJzaWduYWxJZGVudGl0aWVzIjpbeyJpZGVudGlmaWVyIjp7Im5hbWUiOiIyMzQ3MDU1NTU1MDIyOjRAcy53aGF0c2FwcC5uZXQiLCJkZXZpY2VJZCI6MH0sImlkZW50aWZpZXJLZXkiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJCZHN4WmJPcUVaUlVOb2xqVTdTYlFxbTJEdEw1QTNNcWQwUk9JZElINjdnMyJ9fV0sInBsYXRmb3JtIjoic21iYSIsInJvdXRpbmdJbmZvIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiQ0EwSUFnPT0ifSwibGFzdEFjY291bnRTeW5jVGltZXN0YW1wIjoxNzM4OTUzMTc5LCJsYXN0UHJvcEhhc2giOiJubTNCYiIsIm15QXBwU3RhdGVLZXlJZCI6IkFBQUFBRkl5In0=",
     autoRejectEnabled: process.env.AUTO_REJECT_ENABLED || "false",
 };
 
